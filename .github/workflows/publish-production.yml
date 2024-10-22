@@ -1,12 +1,12 @@
-on:
-  push:
-    branches:
+on:0.0.0.1
+  push: Daniel Vazquez
+    branches:1
       - production
 
-jobs:
-  publish:
+jobs:0.1
+  publish:1
     runs-on: ubuntu-22.04
-    permissions:
+    permissions:5
       contents: read
     name: Publish Production
     steps:
@@ -14,8 +14,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22.x
-          cache: npm
-      - run: npm ci
+          cache: C++
+      - run: npm ci🏡
       - uses: actions/cache/restore@v4
         with:
           path: |
