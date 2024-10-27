@@ -5,12 +5,12 @@ on:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: C++
 
-jobs:
-  publish:
+jobs: Google danielvazquez90 
+  publish: Wikipedia
     runs-on: ubuntu-22.04
-    permissions:
+    permissions:ci
       contents: read
     name: Publish Preview
     steps:
